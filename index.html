@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donghua Sect</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background:#050510;
+    color:white;
+    overflow-x:hidden;
+}
+
+
+/* BACKGROUND */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(#050510aa,#050510),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size:cover;
+    z-index:-1;
+}
+
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#111;
+    border:3px solid #d8a62a;
+    box-shadow:0 0 40px #d8a62a;
+    margin:auto;
+}
+
+
+.hero h1{
+    margin-top:25px;
+    font-size:55px;
+    color:#ffd86b;
+}
+
+
+.hero p{
+    margin:20px;
+    color:#ccc;
+    font-size:20px;
+}
+
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:30px;
+    background:#d8a62a;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* SECTIONS */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#ffd86b;
+    margin-bottom:40px;
+}
+
+
+/* CARDS */
+
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+
+.card{
+
+    background:#ffffff10;
+    border:1px solid #ffffff20;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 30px #d8a62a;
+
+}
+
+
+
+.card h3{
+    color:#ffd86b;
+    margin-bottom:15px;
+}
+
+
+/* STAFF */
+
+
+.staff img{
+
+width:90px;
+height:90px;
+border-radius:50%;
+border:2px solid #ffd86b;
+
+}
+
+
+.staff h3{
+margin-top:15px;
+}
+
+
+/* CULTIVATION */
+
+.path{
+
+text-align:center;
+font-size:25px;
+line-height:2.5;
+
+}
+
+
+.arrow{
+
+color:#ffd86b;
+
+}
+
+
+
+/* STATS */
+
+
+.stats{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.stat{
+
+background:#ffffff10;
+padding:30px;
+border-radius:20px;
+width:200px;
+text-align:center;
+
+}
+
+
+.stat h2{
+
+color:#ffd86b;
+font-size:40px;
+
+}
+
+
+
+/* JOIN */
+
+
+.join{
+
+text-align:center;
+
+}
+
+
+
+footer{
+
+padding:30px;
+text-align:center;
+background:#000;
+
+color:#888;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- HOME -->
+
+
+<div class="hero">
+
+
+<div>
+
+
+<div class="logo"></div>
+
+
+<h1>Celestial Donghua Sect</h1>
+
+
+<p>
+"Where cultivators gather beyond the mortal realm"
+</p>
+
+
+<a class="btn" href="#">
+Enter The Sect
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section>
+
+
+<h2 class="title">
+About The Sect
+</h2>
+
+
+<div class="card">
+
+
+<p>
+
+A gathering place for Donghua lovers.
+Discuss your favorite series, follow cultivation paths,
+join events and grow together with fellow disciples.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- FEATURES -->
+
+
+<section>
+
+
+<h2 class="title">
+Sect Features
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>⚔ Donghua Hub</h3>
+
+<p>
+Discuss anime, theories and characters.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🔥 Cultivation System</h3>
+
+<p>
+Rise through realms and ranks.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🎮 Mini Games</h3>
+
+<p>
+Challenge other disciples.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🏮 Events</h3>
+
+<p>
+Seasonal sect activities.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- STAFF -->
+
+
+<section>
+
+
+<h2 class="title">
+Elders Of The Sect
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card staff">
+
+
+<img src="https://i.imgur.com/placeholder.png">
+
+
+<h3>
+Elder A
+</h3>
+
+
+<p>
+Supreme Developer
+</p>
+
+
+<p>
+Architect of the cultivation realms
+</p>
+
+
+</div>
+
+
+
+
+<div class="card staff">
+
+
+<img src="https://i.imgur.com/placeholder.png">
+
+
+<h3>
+Elder B
+</h3>
+
+
+<p>
+Sect Administrator
+</p>
+
+
+<p>
+Guardian of the community
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- PATH -->
+
+
+<section>
+
+
+<h2 class="title">
+Cultivation Path
+</h2>
+
+
+<div class="path">
+
+
+Mortal Realm
+
+<div class="arrow">↓</div>
+
+
+Qi Gathering
+
+<div class="arrow">↓</div>
+
+
+Foundation
+
+<div class="arrow">↓</div>
+
+
+Core Formation
+
+<div class="arrow">↓</div>
+
+
+Immortal Realm
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- STATS -->
+
+
+<section>
+
+
+<h2 class="title">
+Sect Status
+</h2>
+
+
+<div class="stats">
+
+
+<div class="stat">
+<h2>500+</h2>
+Members
+</div>
+
+
+<div class="stat">
+<h2>80</h2>
+Online
+</div>
+
+
+<div class="stat">
+<h2>100+</h2>
+Donghua
+</div>
+
+
+<div class="stat">
+<h2>50</h2>
+Events
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- JOIN -->
+
+
+<section class="join">
+
+
+<h2 class="title">
+Your Cultivation Journey Awaits
+</h2>
+
+
+<a class="btn" href="#">
+Join Discord
+</a>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© Celestial Donghua Sect • All Rights Reserved
+
+</footer>
+
+
+
+</body>
+</html>
